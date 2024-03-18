@@ -10,7 +10,7 @@ jobs:
   image:
     env:
       REGISTRY: ghcr.io
-      IMAGE_NAME: ${{ github.repository }}
+      IMAGE_NAME: photon
 
     runs-on: ubuntu-latest
     permissions:
