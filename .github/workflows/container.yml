@@ -10,7 +10,7 @@ jobs:
   image:
     env:
       REGISTRY: ghcr.io
-      IMAGE_NAME: photon
+      IMAGE_NAME: leonardehrenfried/photon
 
     runs-on: ubuntu-latest
     permissions:
