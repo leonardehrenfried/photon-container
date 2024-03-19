@@ -29,5 +29,9 @@ if [ ! -d "$ES_DIR" ]; then
         -nominatim-update-init-for "$NOMINATIM_DB_USER"
 fi
 
-java -jar photon.jar -cors-any -data-dir "$DATA_DIR" -languages "$PHOTON_LANGUAGES" "$@"
+java -jar photon.jar \
+  -cors-any \
+  -enable-update-api \
+  -data-dir "$DATA_DIR" \
+  -languages "$PHOTON_LANGUAGES"
 
