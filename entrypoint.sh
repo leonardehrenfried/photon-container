@@ -21,5 +21,5 @@ if [ ! -d "$ES_DIR" ]; then
 
 fi
 
-java -jar photon.jar -data-dir  "$DATA_DIR" -languages "$PHOTON_LANGUAGES" "$@"
+java -jar photon.jar -cors-any -data-dir "$DATA_DIR" -languages "$PHOTON_LANGUAGES" "$@"
 
