@@ -21,14 +21,5 @@ if [ ! -d "$ES_DIR" ]; then
 
 fi
 
-java -jar photon.jar \
-        -host      "$NOMINATIM_DB_HOST" \
-        -port      "$NOMINATIM_DB_PORT" \
-        -user      "$NOMINATIM_DB_USER" \
-        -password  "$NOMINATIM_DB_PASSWORD" \
-        -languages "$PHOTON_LANGUAGES" \
-        -data-dir  "$DATA_DIR" \
-        --nominatim-update-init-for "$NOMINATIM_DB_USER"
-
 java -jar photon.jar -cors-any -data-dir "$DATA_DIR" -languages "$PHOTON_LANGUAGES" "$@"
 
