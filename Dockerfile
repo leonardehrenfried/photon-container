@@ -10,6 +10,7 @@ ADD https://github.com/komoot/photon/releases/download/0.5.0/photon-0.5.0.jar /p
 
 COPY entrypoint.sh /photon/
 COPY update.sh /photon/
+COPY synonyms.json /photon/
 
 ENTRYPOINT /photon/entrypoint.sh
 
