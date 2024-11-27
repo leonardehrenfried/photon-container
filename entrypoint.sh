@@ -14,6 +14,7 @@ if [ ! -d "$ES_DIR" ]; then
         -user      "$NOMINATIM_DB_USER" \
         -password  "$NOMINATIM_DB_PASSWORD" \
         -languages "$PHOTON_LANGUAGES" \
+        -extra-tags ref:IFOPT \
         -data-dir  "$DATA_DIR"
   echo
   echo 'Photon init process complete; ready for start up.'
@@ -26,6 +27,7 @@ if [ ! -d "$ES_DIR" ]; then
         -password  "$NOMINATIM_DB_PASSWORD" \
         -languages "$PHOTON_LANGUAGES" \
         -data-dir  "$DATA_DIR" \
+        -extra-tags ref:IFOPT \
         -nominatim-update-init-for "$NOMINATIM_DB_USER"
 fi
 
@@ -35,6 +37,7 @@ java -jar photon.jar \
   -user         "$NOMINATIM_DB_USER" \
   -password     "$NOMINATIM_DB_PASSWORD" \
   -data-dir     "$DATA_DIR" \
+  -extra-tags ref:IFOPT \
   -languages    "$PHOTON_LANGUAGES" \
   -synonym-file "/photon/synonyms.json" \
   -cors-any \
