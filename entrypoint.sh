@@ -1,9 +1,9 @@
 #!/bin/bash -e
 
 DATA_DIR="/photon"
-ES_DIR="${DATA_DIR}/photon_data/elasticsearch"
+OS_DATA_DIR="${DATA_DIR}/photon_data/node_1"
 
-if [ ! -d "$ES_DIR" ]; then
+if [ ! -d "$OS_DATA_DIR" ]; then
 
   echo "Photon data directory doesn't exist. Starting import."
 
