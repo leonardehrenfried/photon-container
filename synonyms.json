@@ -1,11 +1,7 @@
 {
   "search_synonyms": [
     "edeka,neukauf",
-    "krankenhaus,klinik,klinikum,kreiskrankenhaus",
-    "hochschule,universität,fachhochschule",
-    "chargepoint,ladestation",
-    "hotel,gasthof,gasthaus,tagungshotel,pension",
-    "hostel,jugendherberge"
+    "krankenhaus,klinik,klinikum,kreiskrankenhaus"
   ],
   "classification_terms": [
     {
