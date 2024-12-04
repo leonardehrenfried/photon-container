@@ -1,7 +1,8 @@
 {
   "search_synonyms": [
     "edeka,neukauf",
-    "krankenhaus,klinik,klinikum,kreiskrankenhaus"
+    "krankenhaus,klinik,klinikum,kreiskrankenhaus",
+    "chargepoint,ladestation"
   ],
   "classification_terms": [
     {
@@ -127,7 +128,7 @@
     {
       "key": "amenity",
       "value": "university",
-      "terms": ["uni", "universität"]
+      "terms": ["uni", "universität", "fachhochschule"]
     },
     {
       "key": "highway",
@@ -187,7 +188,7 @@
     {
       "key": "tourism",
       "value": "hotel",
-      "terms": ["hotel", "pension"]
+      "terms": ["hotel", "pension", "gasthof", "tagungshotel"]
     },
     {
       "key": "tourism",
