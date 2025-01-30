@@ -2,6 +2,7 @@
   "search_synonyms": [
     "edeka,neukauf",
     "krankenhaus,klinik,klinikum,kreiskrankenhaus",
+    "schwimmbad,hallenbad,freibad,naturbad,naturfreibad",
     "chargepoint,ladestation"
   ],
   "classification_terms": [
