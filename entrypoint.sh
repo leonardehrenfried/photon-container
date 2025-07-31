@@ -20,16 +20,17 @@ if [ ! -d "$OS_DATA_DIR" ]; then
   echo 'Photon init process complete; ready for start up.'
   echo
 
-  java -jar photon.jar \
-        -host      "$NOMINATIM_DB_HOST" \
-        -port      "$NOMINATIM_DB_PORT" \
-        -user      "$NOMINATIM_DB_USER" \
-        -password  "$NOMINATIM_DB_PASSWORD" \
-        -languages "$PHOTON_LANGUAGES" \
-        -data-dir  "$DATA_DIR" \
-        -extra-tags ref:IFOPT \
-        -nominatim-update-init-for "$NOMINATIM_DB_USER"
 fi
+
+java -jar photon.jar \
+  -host      "$NOMINATIM_DB_HOST" \
+  -port      "$NOMINATIM_DB_PORT" \
+  -user      "$NOMINATIM_DB_USER" \
+  -password  "$NOMINATIM_DB_PASSWORD" \
+  -languages "$PHOTON_LANGUAGES" \
+  -data-dir  "$DATA_DIR" \
+  -extra-tags ref:IFOPT \
+  -nominatim-update-init-for "$NOMINATIM_DB_USER"
 
 java -jar photon.jar \
   -enable-update-api \
