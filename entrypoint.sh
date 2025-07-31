@@ -32,6 +32,7 @@ if [ ! -d "$OS_DATA_DIR" ]; then
 fi
 
 java -jar photon.jar \
+  -enable-update-api \
   -host         "$NOMINATIM_DB_HOST" \
   -port         "$NOMINATIM_DB_PORT" \
   -user         "$NOMINATIM_DB_USER" \
@@ -40,5 +41,4 @@ java -jar photon.jar \
   -extra-tags ref:IFOPT \
   -languages    "$PHOTON_LANGUAGES" \
   -synonym-file "/photon/synonyms.json" \
-  -cors-any \
-  -enable-update-api
+  -cors-any
